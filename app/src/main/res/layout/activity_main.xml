@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount" />
+    
+    <EditText
+        android:inputType="number"
+        android:digits="1234567890"
+        android:hint="@string/amountHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editInputAmount"/>
+    <TextView
+        android:id="@+id/textNumPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textNumPax"/>
+    <EditText
+        android:id="@+id/editInputNumPax"
+        android:inputType="number"
+        android:hint="@string/numPaxHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:id="@+id/tbSVS"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_margin="25dp"
+            android:background="@drawable/tooglebutton_selector"
+            android:textOff="@string/svsEnabled"
+            android:textOn="@string/svsDisabled"/>
+        <ToggleButton
+            android:id="@+id/tbGST"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginVertical="25dp"
+            android:background="@drawable/tooglebutton_selector"
+            android:textOff="@string/gstEnabled"
+            android:textOn="@string/gstDisabled"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discount" />
+
+        <EditText
+            android:id="@+id/etDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enterDiscount"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btnSplit"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_margin="25dp"
+            android:textOff="@string/split_off"
+            android:textOn="@string/split_on" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginVertical="25dp"
+
+            android:text="@string/resetBtn" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:text="@string/totalBill" />
+
+        <TextView
+            android:id="@+id/tvPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_margin="50dp"
+            android:text="@string/eachPays" />
+    </LinearLayout>>
+
+
+</LinearLayout>
